@@ -29,8 +29,8 @@ pd.set_option('display.expand_frame_repr', False)  # 禁用多行表示
 
 
 # 2. 加载空气质量数据（Excel文件）
-file_path = r'D:\Users\WangBo\PycharmProjects\PythonProject1\.venv\北京市空气质量数据.xlsx'
-df = pd.read_excel(file_path, engine='openpyxl')
+#file_path = r'D:\Users\WangBo\PycharmProjects\PythonProject1\.venv\北京市空气质量数据.xlsx'
+df = pd.read_excel('北京市空气质量数据.xlsx', engine='openpyxl')
 
 # 将日期列转换为datetime类型（若尚未转换），便于后续可能的时间特征提取，但不作为特征
 if '日期' in df.columns:
